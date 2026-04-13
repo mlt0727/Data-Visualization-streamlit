@@ -5,7 +5,6 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 from scipy import stats
-from tensorflow.python.keras.metrics import Precision
 
 st.set_page_config(page_title="What Stories Do Data Tell?", layout="wide")
 st.title("What Stories Do Data Tell?")
