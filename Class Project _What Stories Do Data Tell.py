@@ -72,7 +72,7 @@ with tab2:
     st.write("number of missing values:", df.isnull().sum())
 
     for col in df.columns[1:]:
-        df[col].fillna(df[col].median(), inplace=True)
+        df[col] = df[col].fillna(df[col].median(), inplace=True)
     st.write("After filling the missing values with median:", df.isnull().sum())
 
     st.subheader("Outliers")
